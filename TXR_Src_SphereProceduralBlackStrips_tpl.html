@@ -107,8 +107,10 @@
 				
 				vec3 vNormal = normalize(vNormal);
 								
-				float strips = mod(floor(vTextureCoord.s * 36.), 2.);
-				vec4 tColor = vec4(strips,0,0,1);
+				float vStrips = mod(floor(vTextureCoord.s * 25.), 2.);
+				float hStrips = mod(floor(vTextureCoord.t * 8.), 2.);			
+				float caros = vStrips * hStrips + (-vStrips) * (1.-hStrips);
+				vec4 tColor = vec4(1.,caros,0,1);
 				vec4 lighting = vec4( phong(vPosition.xyz, vNormal, v), 1.0);
 				gl_FragColor = tColor * lighting;
 			}			
@@ -126,7 +128,7 @@
 				<br>
 				To zoom press the "D" key.<br>
 				<br>
-				<a href="index.html"><button>Coffee</button></a>
+				<a href="index.html"><button>Coffee texture</button></a>
 
 			</p>
 		</div>
