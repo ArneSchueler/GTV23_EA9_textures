@@ -252,7 +252,7 @@ var app = (function() {
         });
 
         createModel("plane", fs, [ 1, 1, 1, 1 ], [ 0, 0, 0, 0 ], [ 0, 0, 0,
-                0 ], [ 1, 1, 1, 1 ], mGrey, "textures/x.png");
+                0 ], [ 1, 1, 1, 1 ], mGrey, "textures/ice.png");
 
         // Select one model that can be manipulated interactively by user.
         interactiveModel = models[0];
