@@ -1,9 +1,11 @@
 <!DOCTYPE html5>
 <html>
 	<head>
+		<link rel="stylesheet" href="main.css">
 		<script src="ext/gl-matrix.js"></script>
 		<script src="GVT_Src_vertexData_plane.js"></script>
 		<script src="GVT_Src_vertexData_sphere.js"></script>
+		<script src="GVT_Src_vertexData_torus.js"></script>
 		<script src="TXR_Src_tpl.js"></script>
 		<script type="x-shader/x-vertex" id="vertexshader">
 			attribute vec3 aPosition;
@@ -114,5 +116,20 @@
 	</head>
 	<body onload="app.start()">
 		<canvas id="canvas" width="500" height="500"></canvas>
+		<div class="info" id="info">
+			<p class="content">
+				Texture on Torus for the module Graphical Visualisation Technologies (BHT MIM 20 W23).<br>
+				<br>
+				To rotate the Camera on the Y-Axis press the "Y" key.<br>
+				<br>
+				To rotate the Camera on the X-Axis press the "X" key.<br>
+				<br>
+				To zoom press the "D" key.<br>
+				<br>
+				<a href="index.html"><button>Coffee</button></a>
+
+			</p>
+		</div>
+
 	</body>
 </html>
